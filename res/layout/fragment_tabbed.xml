@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:shrinkColumns="1"
+        android:stretchColumns="1">
+
+        <TableRow
+            android:id="@+id/address_row"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:padding="3dip"
+                android:text="Address"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/address_text"
+                android:autoLink="phone"
+                android:layout_marginLeft="20dip"
+                android:gravity="left"
+                android:padding="3dip" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/phone_row"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:padding="3dip"
+                android:text="Phone number"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/phone_text"
+                android:autoLink="phone"
+                android:layout_marginLeft="20dip"
+                android:gravity="left"
+                android:padding="3dip" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/price_level_row"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:padding="3dip"
+                android:text="Price level"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/price_level_text"
+                android:layout_marginLeft="20dip"
+                android:gravity="left"
+                android:padding="3dip" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/rating_row"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:padding="3dip"
+                android:text="Rating"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="7">
+
+                <RatingBar
+                    android:id="@+id/rating_text"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="left"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:padding="3dip"
+                    android:stepSize="0.1" />
+
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/google_page_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible">
+
+            <TextView
+                android:padding="3dip"
+                android:text="Google page"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/google_page_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:autoLink="web"
+                android:gravity="left"
+                android:padding="3dip" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/website_row"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:padding="3dip"
+                android:text="Website"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/website_text"
+                android:autoLink="web"
+                android:layout_marginLeft="20dip"
+                android:gravity="left"
+                android:padding="3dip" />
+        </TableRow>
+    </TableLayout>
+
+
+
+</RelativeLayout>
